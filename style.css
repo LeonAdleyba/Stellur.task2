@@ -32,6 +32,7 @@ h1 {
 
 .main {
     margin: 100px auto;
+    margin-bottom: 50px;
     max-width: 900px;
     width: 90%;
     background-color: white;
@@ -44,6 +45,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 
 }
 
@@ -117,8 +119,8 @@ h1 {
 .circle {
     border-radius: 100%;
     border: 1px solid rgb(176, 176, 176);
-    width: 245px;
-    height: 245px;
+    width: 248px;
+    height: 248px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -327,11 +329,104 @@ h2 {
         padding: 15px;
     }
 
-    .twice-paragraph > p:nth-of-type(2) {
+    .twice-paragraph>p:nth-of-type(2) {
         display: none;
     }
 
     .main-panel {
         padding: 70px 30px;
+    }
+}
+
+
+.footer-columns {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-column {
+    max-width: 45%;
+}
+
+.footer-column>h1 {
+    font-size: 19px;
+    color: rgb(236, 236, 236);
+}
+
+.footer-column>p {
+    font-size: 13px;
+    color: rgba(223, 223, 223, 0.629);
+}
+
+.footer-column>.main-button {
+    color: rgb(236, 236, 236);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.cell {
+    height: 25px;
+}
+
+
+.footer-item-header>p {
+    margin: 0;
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+}
+
+.footer-item-paragraph>p {
+    margin: 0;
+    font-size: 12px;
+    color: rgba(223, 223, 223, 0.684);
+}
+
+.footer-column:nth-child(3) {
+    margin-top: 50px;
+    display: flex;
+    padding: 0;
+    gap: 10px;
+}
+
+.svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 100%;
+    padding: 7px 7px;
+}
+
+.last-call {
+    color: rgba(223, 223, 223, 0.684);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 750px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width: 710px) {
+
+    .footer-container {
+        gap: 25px;
+    }
+}
+
+@media screen and (max-width: 395px) {
+    .main-buttons {
+        flex-direction: column;
     }
 }
